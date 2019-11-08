@@ -1,0 +1,109 @@
+$primary-dark: #232F34;
+$primary-mid: #344955;
+$primary-light: #4A6572;
+$secondary: #F9AA33;
+
+$navbarHeight: 70px;
+
+.navbar-dark {
+     background-color: $primary-dark;
+     height: $navbarHeight;
+}
+
+#notificationsBtn{
+    color: $secondary;
+    margin-top: $navbarHeight/2;
+    margin-left: 50px;
+}
+
+#navbarBrand{
+    color: #efefef;
+    line-height: $navbarHeight;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+body{
+    background-color: $primary-mid;
+    // padding:$navbarHeight 0px 0px 0px;
+}
+
+#todoContainer, #completedContainer{
+    background-color: $primary-light;
+    color: $secondary;
+    min-height: 200px;
+    padding: 0px;
+    margin-top: 60px;
+    font-size: 20px;
+
+    #header{
+        background-color: $primary-dark;
+        padding: 5px 0px 5px 10px;
+
+    }
+    #body {
+        padding: 5px 10px 10px 0px;
+        ul{
+            list-style:none;
+            li{
+                line-height: 40px;
+            }
+        }
+        .fa-trash{
+            margin-left: 10px;
+            line-height: 20px;
+            color: grey;
+            cursor:pointer;
+        }
+        .fa-trash:hover{
+            color: white;
+        }
+        .item_date{
+            font-size: 20px;
+            float: right;
+        }
+        .item_desc{
+            margin-left: -10px;
+        }
+    }
+
+}
+#completedContainer{
+    color: MediumSeaGreen !important;
+    li{
+        color: MediumSeaGreen !important;
+    }
+    .item_desc{
+        text-decoration: line-through;
+    }
+}
+#createTaskBtn{
+    margin-left: 10px;
+    color: #ddd;
+    cursor: pointer;
+}
+#createTaskBtn:hover{
+    color: white;
+}
+
+.modal-header{
+    background-color: $primary-dark;
+    border-color: $secondary;
+    color: $secondary;
+}
+.modal-body{
+    background-color: $primary-mid;
+    color: $secondary;
+}
+#loginBtn, #createTaskBtn, #notificationsBtn{
+    cursor: pointer;
+}
+#loginBtn{
+    line-height: $navbarHeight;
+}
+#createTaskForm{
+    width: 50%;
+    button[type=submit]{
+        float: right !important;
+    }
+}
